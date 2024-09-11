@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: skyblue;
+        }
+        .wrapper {
+            overflow: auto;
+        }
+        #main {
+            margin-left: 8px;
+        }
+        #leftsidebar {
+            float: none;
+            width: auto;
+        }
+        #menulist {
+            margin: 0;
+            padding: 0;
+        }
+        .menuitem {
+            background-color: pink;
+            border: 2px solid blue;
+            border-radius: 5px;
+            list-style-type: none;
+            margin: 5px;
+            padding: 3px;
+        }
+        @media screen and (min-width:480px) {
+            #leftsidebar {
+                width: 240px;
+                float: left;
+            }
+            #main {
+                margin-left: 250px;
+                background-color: red;
+                padding: 10px;
+            }
+        }
+        @media screen and (max-width:900px) {
+            body {
+                background-color: red;
+            }
+        }
+        @media screen and (max-width:650px) {
+            body {
+                background-color: yellow;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div id="leftsidebar">
+            <ul id="menulist">
+                <li class="menuitem">Menu 1</li>
+                <li class="menuitem">Menu 2</li>
+                <li class="menuitem">Menu 3</li>
+                <li class="menuitem">Menu 4</li>
+                <li class="menuitem">Menu 5</li>
+            </ul>
+        </div>
+        <div id="main">
+            <h2>We're Learning Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, illum ea. Fuga iusto, illo, ipsa tenetur deleniti laboriosam numquam eveniet quod ex illum quibusdam consectetur adipisci! Magni possimus veniam accusamus.</p>
+        </div>
+    </div>
+</body>
+</html>
